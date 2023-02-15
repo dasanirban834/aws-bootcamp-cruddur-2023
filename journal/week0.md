@@ -19,7 +19,11 @@ This session will describe on How to setup billing alarms, budgets, cost explore
 There are 2 ways to setup alams.  
 - Using Budget. For free trier account, maximum 2 budgets we can created. Exceeding the limit will incur costs.  
 - Using Cloudwatch Alarms. Here, you have to create alarm in us-east-1 region by using cloudwatch with SNS topic. Here SNS topic would be used to send an email notification.  
-By setting up billing alerts, you can stay informed about your AWS costs and avoid unexpected charges.
+![image](https://user-images.githubusercontent.com/67305577/219075151-2e2ef6a0-2879-4256-8071-dc5788527c30.png)
+ 
+By setting up billing alerts, you can stay informed about your AWS costs and avoid unexpected charges.  
+![image](https://user-images.githubusercontent.com/67305577/219075632-8973e54c-ea21-49dc-a955-b0484dac3fc2.png)  
+![image](https://user-images.githubusercontent.com/67305577/219076200-1bd884d5-b2d9-4070-8097-bc883bcae284.png)  
 
 ## **Bills**:  
 Bills option in AWS billing console provides a compact view of all consumed resources in all regions. By default it shows the crrency in USD, but from preferences setting you can also include local currrency. We can get invoices for all months and do payment based upon the total amount show in the bills. For payment , you have to choose Credit/Debit card during account setup. Later also it can be changed.
@@ -41,6 +45,10 @@ Initially during aws account setup, we do activities as a root user, then we hav
 - Create group for categorization.
 - Create a role with required admin priviledges.
 - Attach the role to that partiular user.  
+![image](https://user-images.githubusercontent.com/67305577/219076898-7c4ab239-9cb6-4c4b-8c9b-ebeba726a958.png)
+
+![image](https://user-images.githubusercontent.com/67305577/219076623-302d2b75-278b-44f1-9b26-d967d5d73fa6.png)
+
 ## **Access Keys**:  
 For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got geerated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
 
