@@ -37,7 +37,7 @@ AWS provides a very useful pricing calculator to estimate the costs to be incurr
 
 # **IAM User and Roles**:  
 Initially during aws account setup, we do activities as a root user, then we have to ensure that we create IAM users with Administrator priviledge for further activity and do not use root user anymore. Also, setup MFA for a root user to enhance additional layer of security. please follow below steps to create IAM users -->  
-- Open IAm console and create IAM user.
+- Open IAM console and create IAM user.
 - Create group for categorization.
 - Create a role with required admin priviledges.
 - Attach the role to that partiular user.  
@@ -45,4 +45,4 @@ Initially during aws account setup, we do activities as a root user, then we hav
 For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got geerated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
 
 # **Architectural Diagram in Lucid Charts**:  
-![Alt text](C:/Users/dasan/Downloads/lucid_chart.png)
+![Image](C:/Users/dasan/Downloads/lucid_chart.png)
