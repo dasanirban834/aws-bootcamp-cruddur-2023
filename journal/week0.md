@@ -45,4 +45,5 @@ Initially during aws account setup, we do activities as a root user, then we hav
 For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got geerated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
 
 # **Architectural Diagram in Lucid Charts**:  
-![Image](C:/Users/dasan/Downloads/lucid_chart.png)
+![lucid_chart](https://user-images.githubusercontent.com/67305577/219072734-d8ea7f6b-2052-4545-8fc2-c42264deb1b8.png)
+
