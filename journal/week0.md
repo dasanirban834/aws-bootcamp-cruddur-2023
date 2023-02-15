@@ -13,7 +13,7 @@ Please check the youtube video playlist for getting more updates on this bootcam
 ## Week 0 — Billing and Architecture:  
 This week has been dedicated for discussing on AWS Billing, setup billing alarms, create IAM user and provide AWS CLI access by creating Access keys.Once AWS account is created, then please ensure you setup billing alarms in order to avoid unwanted charges. Billing depends on AWS regions completely, for each regions, charges would be different, also depends on resources utlization and compute specifications. For example, for an EC2 instances, t2.medium will incur more charges than t2.micro as it cosumes more CPU and memory resources.  
 
-## **Billing Alerts, Tags, Cost Explorer:**  
+### **Billing Alerts, Tags, Cost Explorer:**  
 This session will describe on How to setup billing alarms, budgets, cost explorers etc.  
 ## **Billing Alarms**:  
 There are 2 ways to setup alams.  
@@ -33,4 +33,17 @@ Bills option in AWS billing console provides a compact view of all consumed reso
 Tags are simple key-valur pairs which can be used for understanding the expenses for a certain environment. For example, to get an idea about the costs for Dev environment, we can create a tag with environment.
 
 ## **Pricing Calculator**:  
-AWS provides a very useful pricing calculator to estimate the costs to be incurred for a certain workload. For exmaple, if yoou have a requirement to deploy 100 EC2 instances, then you can easily get an estimation of costs for 100 instances by using [Pricing Calculator](https://calculator.aws/#/).
+AWS provides a very useful pricing calculator to estimate the costs to be incurred for a certain workload. For exmaple, if yoou have a requirement to deploy 100 EC2 instances, then you can easily get an estimation of costs for 100 instances by using [Pricing Calculator](https://calculator.aws/#/).  
+
+### **IAM User and Roles**:  
+Initially during aws account setup, we do activities as a root user, then we have to ensure that we create IAM users with Administrator priviledge for further activity and do not use root user anymore. Also, setup MFA for a root user to enhance additional layer of security. please follow below steps to create IAM users -->  
+- Open IAm console and create IAM user.
+- Create group for categorization.
+- Create a role with required admin priviledges.
+- Attach the role to that partiular user.  
+## **Access Keys**:  
+For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got geerated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
+
+### **Architecture**:  
+
+image.png
