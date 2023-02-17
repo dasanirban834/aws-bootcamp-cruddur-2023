@@ -18,7 +18,8 @@ This session will describe on How to setup billing alarms, budgets, cost explore
 ## **Billing Alarms**:  
 There are 2 ways to setup alams.  
 - Using Budget. For free trier account, maximum 2 budgets we can created. Exceeding the limit will incur costs.  
-- Using Cloudwatch Alarms. Here, you have to create alarm in us-east-1 region by using cloudwatch with SNS topic. Here SNS topic would be used to send an email notification.  
+- Using Cloudwatch Alarms. Here, you have to create alarm in us-east-1 region by using cloudwatch with SNS topic. Here SNS topic would be used to send an email notification. 
+ 
 ![image](https://user-images.githubusercontent.com/67305577/219559078-910c79d2-bf77-463d-934d-6757200eee71.png)
  
 By setting up billing alerts, you can stay informed about your AWS costs and avoid unexpected charges.  
@@ -58,5 +59,15 @@ Cloudshell is basically aws managed browser based shell which provides leverage 
 
 # **Architectural Diagram in Lucid Charts**:  
 
-![lucid_chart](https://user-images.githubusercontent.com/67305577/219072734-d8ea7f6b-2052-4545-8fc2-c42264deb1b8.png)
+![lucid_chart](https://user-images.githubusercontent.com/67305577/219072734-d8ea7f6b-2052-4545-8fc2-c42264deb1b8.png)  
 
+# **What is C4 Model**  
+
+For any particular project, there should have some minor projects or targets which needs to be completed to get this job done in proper way that can lead different kind of difficulies when multiple individuals participate in the discussion from different domain or field. To make this entire discussion simple, basically we are used to create some PPT or any high level diagram and this diagram must be understandable from all point of view irrrespective of the domain. To simplify it, a new approach has been taken to visualize an entire planning, our target, what this project is all about, how it can be done and so many.  
+In C4, each “C” represents a different type of model at a different level of detail. These different levels are known as  
+- context
+- containers
+- components
+- code  
+
+The diagrams you draw for these different levels help you to tell the right story to the right audience.
