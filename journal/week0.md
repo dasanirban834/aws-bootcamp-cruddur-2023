@@ -1,4 +1,4 @@
-## **Prerequisites:**  
+# **Prerequisites:**  
 In order to start this exciting bootcamp, we need to perform few actions to ensure that prerequisites are completed.
 Here, I would definitely recommend to take a look of below mnetioned youtube playlist to get more idea and clarity.  
 - *Create github free account. Please take a look of this sample github repository provided by Andrew and create your own repository.* 
@@ -10,7 +10,7 @@ Here, I would definitely recommend to take a look of below mnetioned youtube pla
 Once you register for above all accounts, then please go for Week 0 assignments.  
 Please check the youtube video playlist for getting more updates on this bootcamp [AWS CloudProjectBootcamp](https://www.youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)  
 
-## Week 0 — Billing and Architecture:  
+# Week 0 — Billing and Architecture:  
 This week has been dedicated for discussing on AWS Billing, setup billing alarms, create IAM user and provide AWS CLI access by creating Access keys.Once AWS account is created, then please ensure you setup billing alarms in order to avoid unwanted charges. Billing depends on AWS regions completely, for each regions, charges would be different, also depends on resources utlization and compute specifications. For example, for an EC2 instances, t2.medium will incur more charges than t2.micro as it cosumes more CPU and memory resources.  
 
 # **Billing Alerts, Tags, Cost Explorer:**  
