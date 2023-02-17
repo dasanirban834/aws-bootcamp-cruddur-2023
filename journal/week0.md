@@ -19,11 +19,11 @@ This session will describe on How to setup billing alarms, budgets, cost explore
 There are 2 ways to setup alams.  
 - Using Budget. For free trier account, maximum 2 budgets we can created. Exceeding the limit will incur costs.  
 - Using Cloudwatch Alarms. Here, you have to create alarm in us-east-1 region by using cloudwatch with SNS topic. Here SNS topic would be used to send an email notification.  
-![image](https://user-images.githubusercontent.com/67305577/219075151-2e2ef6a0-2879-4256-8071-dc5788527c30.png)
+![image](https://user-images.githubusercontent.com/67305577/219559078-910c79d2-bf77-463d-934d-6757200eee71.png)
  
 By setting up billing alerts, you can stay informed about your AWS costs and avoid unexpected charges.  
-![image](https://user-images.githubusercontent.com/67305577/219075632-8973e54c-ea21-49dc-a955-b0484dac3fc2.png)  
-![image](https://user-images.githubusercontent.com/67305577/219076200-1bd884d5-b2d9-4070-8097-bc883bcae284.png)  
+
+![image](https://user-images.githubusercontent.com/67305577/219075632-8973e54c-ea21-49dc-a955-b0484dac3fc2.png)    
 
 ## **Bills**:  
 Bills option in AWS billing console provides a compact view of all consumed resources in all regions. By default it shows the crrency in USD, but from preferences setting you can also include local currrency. We can get invoices for all months and do payment based upon the total amount show in the bills. For payment , you have to choose Credit/Debit card during account setup. Later also it can be changed.
@@ -44,14 +44,19 @@ Initially during aws account setup, we do activities as a root user, then we hav
 - Open IAM console and create IAM user.
 - Create group for categorization.
 - Create a role with required admin priviledges.
-- Attach the role to that partiular user.  
-![image](https://user-images.githubusercontent.com/67305577/219076898-7c4ab239-9cb6-4c4b-8c9b-ebeba726a958.png)
+- Attach the role to that particular user.  
+
+![image](https://user-images.githubusercontent.com/67305577/219557476-452513f3-f8fb-4a56-8fd4-6ca409679765.png)
 
 ![image](https://user-images.githubusercontent.com/67305577/219076623-302d2b75-278b-44f1-9b26-d967d5d73fa6.png)
 
 ## **Access Keys**:  
-For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got geerated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
+For accessing AWS cli, access keys should be created by root user. Create an access key which will generate another key (secret access key), these both keys will be used while working in CLI/API. Please note once these two keys got generated, keep these in safe place like securityhub or any vault as if we lose it, then it won't be recoverd. We have to create once againthat may cause a problem. Also make sure these keys should not be written in plain text format like in notepad or any code repositories to avoid account expolitation.  
+
+## **Cloudshell**:  
+Cloudshell is basically aws managed browser based shell which provides leverage to perform administrative tasks without any requirement of distinct software sessions. This services contains some preinstalled tools like AWS CLI, python, Node.js and more with 1GB free storage per AWS region. The main advantage is persistant storage capability that defines whatever data you are going to store under home directory would be available for future sessions in same region that reduces the chances of data loss.
 
 # **Architectural Diagram in Lucid Charts**:  
+
 ![lucid_chart](https://user-images.githubusercontent.com/67305577/219072734-d8ea7f6b-2052-4545-8fc2-c42264deb1b8.png)
 
